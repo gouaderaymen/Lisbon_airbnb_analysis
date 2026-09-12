@@ -1,0 +1,8 @@
+### 🗺️ Interactive Geospatial Visualization
+
+The rental listings map was refactored and optimized using **Plotly 6.x** to deliver an intuitive, production-ready geospatial breakdown:
+
+* **Plotly 6.x Compliance:** Upgraded legacy `scatter_mapbox` traces to modern, open-source `px.scatter_map` and `map_style="carto-positron"` parameters, eliminating the dependency on legacy Mapbox API tokens.
+* **Data Robustness & Type Enforcement:** Automated the removal of missing geospatial coordinates (`NaN`) and explicitly cast price fields to numeric data to prevent engine rendering crashes.
+* **Dual-Variable Visual Encoding:** Maps both color density (`color_continuous_scale='Viridis'`) and marker radius (`size='price'`) to the price metric, making luxury listings instantly identifiable at a glance.
+* **Polished User Experience:** Restructured hover tooltips to display beautiful currency formatting (`$XX.XX`) while filtering out unnecessary raw coordinate fields. Margins were optimized (`0` padding) to maximize map real estate in notebooks and dashboards.
