@@ -1,6 +1,6 @@
-import streamlit as st
 import pandas as pd
 import plotly.express as px
+import streamlit as st
 
 # Set up page configurations
 st.set_page_config(page_title='Lisbon Airbnb Explorer', layout='wide')
