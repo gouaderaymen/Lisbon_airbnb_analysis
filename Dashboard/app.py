@@ -9,7 +9,7 @@ st.set_page_config(page_title='Lisbon Airbnb Explorer', layout='wide')
 @st.cache_data
 def load_data():
     # Adjusted path assuming app is running inside the 'dashboard/' directory
-    return pd.read_csv('data/listings_clean.csv')
+    return pd.read_csv('Data/listings_clean.csv')
 
 # Load the dataset
 try:
